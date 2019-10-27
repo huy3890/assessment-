@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Template for initial or home page of the site."
+    jcr:primaryType="cq:Template"
+    jcr:title="New Assessment Home Page"
+    allowedPaths="/content/Assessment[0-9a-z\-]*"
+    ranking="{Long}1">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="Assessment/components/pages/homePage">
+    </jcr:content>
+</jcr:root>

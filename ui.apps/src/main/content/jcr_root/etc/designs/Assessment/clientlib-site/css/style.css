@@ -1,0 +1,79 @@
+/*
+ *  Copyright 2015 Adobe Systems Incorporated
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 0.875em;
+    line-height: 1.2;
+    background-color: #d3d3d3;
+}
+
+a {
+    text-decoration: none;
+    color: #025c1f;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    vertical-align: top;
+} */
+
+*{margin: 0; padding: 0;}
+ nav{width: 800px;margin: auto;}
+ 
+ ul{list-style: none;}
+ 
+ ul li{ width: 120px; background: #0080cd; float: left; height: 35px; line-height: 35px; text-align: center; margin-right: 2px; position: relative;}
+ 
+ ul li:hover{ background: #0e6ea8;}
+ 
+ ul li a{color: #fff; text-decoration: none; font-family: sans-serif; display: block;}
+ 
+ ul li ul li{ border-top: 1px solid #fff;}
+ 
+ ul li ul{display: none;}
+ 
+ ul li:hover ul{ display: block;}
+ 
+ ul li ul .itam-2{position: absolute; left: 122px; top: 0; display: none;}
+ 
+ ul li ul li:hover .itam-2{display: block;}
+ 
+ section{width: 800px; margin: auto; clear: both; background: #e1e1e1;}
+ 
+ footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
+}

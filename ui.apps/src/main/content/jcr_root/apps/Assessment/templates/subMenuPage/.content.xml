@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          jcr:description="Assessment Sub Menu Page"
+          jcr:primaryType="cq:Template"
+          jcr:title="Assessment Sub Menu Page"
+          allowedPaths="[/content/Assessment.*(/.*)?]"
+          allowedParents="[/apps/Assessment/templates/menuPage]"
+          allowedChildren="[]"
+          ranking="{Long}200">
+    <jcr:content
+            jcr:isCheckedOut="{Boolean}true"
+            jcr:mixinTypes="[mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="Assessment/components/pages/subMenuPage"/>
+</jcr:root>

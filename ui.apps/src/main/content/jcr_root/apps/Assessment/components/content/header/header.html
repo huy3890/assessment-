@@ -1,0 +1,27 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design}">
+    <a>Header Component</a>
+</sly>
+<sly data-sly-use.model="com.aem.assessment.core.models.HeaderModel" data-sly-unwrap>
+	<sly data-sly-test.hasContent="${model.hasContent}"></sly>
+	<sly data-sly-test="${hasContent}">
+		<nav>
+	       <ul>
+	           <li><a href="${model.presenter.path}">${model.presenter.title} <span>&#x25BE;</span></a>
+	               <ul data-sly-list.menuChild="${model.presenter.childNavigationList}">
+	                   <li data-sly-test="${menuChild.childNavigationList}"><a href="${menuChild.path}">${menuChild.title}<span>&#x25B8;</span></a>
+	                       <ul class="itam-2" data-sly-list.subMenuChild="${menuChild.childNavigationList}">
+	                           <li><a href="${subMenuChild.path}">${subMenuChild.title}</a></li>      
+	                       </ul>
+	                   </li>
+	                   <li data-sly-test="${!menuChild.childNavigationList}"><a href="${menuChild.path}">${menuChild.title}</a></li>
+	               </ul>
+	           </li>
+	       </ul>
+	   </nav>
+	</sly>
+   <sly data-sly-test="${!hasContent}">
+ 		<section>
+     		<p>Header component not exist content</p>
+ 		</section>
+   </sly>
+</sly>
